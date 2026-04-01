@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Truy Vấn Thông Tin</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Chatbot</h2>
+        <button id="btn-new" title="Cuộc hội thoại mới">+ Mới</button>
+      </div>
+      <ul id="session-list"></ul>
+    </aside>
+
+    <!-- Main chat area -->
+    <main class="chat-area">
+      <div id="messages" class="messages"></div>
+
+      <form id="chat-form" class="input-bar">
+        <textarea
+          id="input"
+          placeholder="Hỏi bất cứ điều gì... (Enter để gửi, Shift+Enter xuống dòng)"
+          rows="1"
+          autofocus
+        ></textarea>
+        <button type="submit" id="btn-send">Gửi</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
